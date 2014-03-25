@@ -1,0 +1,158 @@
+/* slider */
+/* line 5, ../scss/home.scss */
+.slider {
+  height: 300px;
+  position: relative;
+  width: 100%; }
+  /* line 10, ../scss/home.scss */
+  .slider li {
+    background-size: 100% auto;
+    height: 300px;
+    width: 100%; }
+
+/* destaques */
+/* line 19, ../scss/home.scss */
+.destaques {
+  display: table;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* seta_destaque */
+  /* destaque_bottom */ }
+  /* line 26, ../scss/home.scss */
+  .destaques .arrow-destaque {
+    background-image: url(http://localhost/_tanclick/wp-content/themes/tanclick/build/img/icons-sprite.png);
+    height: 18px;
+    position: absolute;
+    top: 10%;
+    width: 9px; }
+  /* line 34, ../scss/home.scss */
+  .destaques .left {
+    background-position: -74px 0px;
+    right: 48.3%; }
+  /* line 39, ../scss/home.scss */
+  .destaques .right {
+    background-position: -84px 0px;
+    left: 48.3%; }
+  /* line 45, ../scss/home.scss */
+  .destaques ._destaque-bottom {
+    display: table; }
+    /* line 48, ../scss/home.scss */
+    .destaques ._destaque-bottom .destaque-block-txt {
+      left: 0 !important; }
+    /* line 52, ../scss/home.scss */
+    .destaques ._destaque-bottom .destaque-block-img {
+      margin-left: 50.5%;
+      position: relative; }
+  /* line 59, ../scss/home.scss */
+  .destaques .destaque-block {
+    margin: 0px;
+    padding: 0px;
+    width: 50%; }
+    /* line 64, ../scss/home.scss */
+    .destaques .destaque-block a, .destaques .destaque-block a:link, .destaques .destaque-block a:visited, .destaques .destaque-block a:active {
+      color: #ffed00;
+      text-decoration: none; }
+    /* line 69, ../scss/home.scss */
+    .destaques .destaque-block i {
+      background: url(http://localhost/_tanclick/wp-content/themes/tanclick/build/img/icons-sprite.png);
+      display: block;
+      float: left;
+      height: 15px;
+      margin-right: 5px;
+      position: relative; }
+    /* line 78, ../scss/home.scss */
+    .destaques .destaque-block .cuidados {
+      background-position: 0px 0px;
+      width: 17px; }
+    /* line 83, ../scss/home.scss */
+    .destaques .destaque-block .novidades {
+      background-position: -17px 0px;
+      width: 17px; }
+    /* line 88, ../scss/home.scss */
+    .destaques .destaque-block .promocoes {
+      background-position: -34px 0px;
+      width: 16px; }
+    /* line 93, ../scss/home.scss */
+    .destaques .destaque-block .servicos {
+      background-position: -52px 0px;
+      width: 19px; }
+    /* line 100, ../scss/home.scss */
+    .destaques .destaque-block .destaque-block-img img {
+      height: auto;
+      width: 100%; }
+    /* line 107, ../scss/home.scss */
+    .destaques .destaque-block .destaque-block-txt {
+      background-color: #294a9b;
+      color: #fff;
+      height: 81.8%;
+      margin: 1.5%;
+      padding: 2.5%;
+      position: absolute;
+      right: 0;
+      width: 41.9%; }
+      /* line 118, ../scss/home.scss */
+      .destaques .destaque-block .destaque-block-txt .title {
+        color: #ffed00;
+        margin-bottom: 10px; }
+      /* line 123, ../scss/home.scss */
+      .destaques .destaque-block .destaque-block-txt p {
+        margin-bottom: 15px; }
+      /* line 127, ../scss/home.scss */
+      .destaques .destaque-block .destaque-block-txt h2 {
+        font-weight: bold;
+        margin-bottom: 3px; }
+
+/* ==================================================================
+	>1200px
+================================================================== */
+@media screen and (max-width: 1200px) {
+  /* menu */
+  /* line 143, ../scss/home.scss */
+  .destaque-block {
+    font-size: .9em !important; } }
+/* ==================================================================
+	>1015px
+================================================================== */
+@media screen and (max-width: 1015px) {
+  /* slider */
+  /* line 154, ../scss/home.scss */
+  .slider li {
+    height: 250px; }
+
+  /* destaques */
+  /* line 160, ../scss/home.scss */
+  .destaque-block {
+    font-size: .9em !important;
+    width: 100% !important; } }
+/* ==================================================================
+	>850px
+================================================================== */
+@media screen and (max-width: 850px) {
+  /* slider */
+  /* line 172, ../scss/home.scss */
+  .slider {
+    height: 150px; }
+    /* line 175, ../scss/home.scss */
+    .slider li {
+      height: 150px; }
+
+  /* destaques */
+  /* line 183, ../scss/home.scss */
+  .destaque-block .destaque-block-img {
+    display: none; }
+  /* line 187, ../scss/home.scss */
+  .destaque-block .destaque-block-txt {
+    position: relative !important;
+    width: 92% !important; }
+  /* line 192, ../scss/home.scss */
+  .destaque-block .arrow-destaque {
+    display: none; } }
+/* ==================================================================
+	>530px
+================================================================== */
+@media screen and (max-width: 530px) {
+  /* slider */
+  /* line 206, ../scss/home.scss */
+  .slider li {
+    background-size: 100% 100%; } }

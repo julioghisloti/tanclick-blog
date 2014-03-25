@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".destaques").children().hover(function(){$(this).siblings().stop().fadeTo(200,.2)},function(){$(this).siblings().stop().fadeTo(200,1)})});

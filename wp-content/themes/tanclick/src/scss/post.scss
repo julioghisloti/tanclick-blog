@@ -1,0 +1,122 @@
+@import "_cores.scss";
+@import "_mixins.scss";
+@import "compass/css3";
+
+/* comp */
+body{background-color: #ddd;}
+
+/* post */
+.page{
+	display: table;
+	float: none;
+
+	@include center();
+
+	.post{
+		border-right: 1px solid #ccc;
+		display: table;
+
+		img{
+			margin-bottom: 20px;
+			width: 100%;
+		}
+
+
+		h1{
+			font-size: 1.7em;
+			margin-bottom: 25px;
+		}
+
+		p{
+			margin-bottom: 15px;
+			text-align: justify;
+		}
+
+	}
+
+}
+
+/* sidebar */
+.sidebar{
+	width: 26.5%;
+
+	/* tantan logo */
+	.tantan-logo{
+		float: none;
+		position: relative;
+		@include center();
+
+		img{
+			height: auto;
+			width: 100%;
+		}
+
+	}
+
+	/* sidebar-block */
+	.sidebar-block{
+		color: #444;
+		float: none;
+		margin-bottom: 25%;
+		margin-top: 15%;
+		position: relative;
+		@include center();
+
+		a, a:link, a:active, a:visited{
+			color: #444;
+			text-decoration: none;
+		}
+
+		h1{
+			font-size: 1.3em;
+			margin-bottom: 8%;
+			text-transform: uppercase;
+		}
+
+		li{
+			border-bottom: 1px solid #aaa;
+			list-style: none;
+			margin-bottom: 5%;
+			padding-bottom: 1%;
+		}
+
+		.fb-like-box{
+			width: 100%;
+
+			span{
+				width: 100% !important;
+
+				iframe{
+					height: 500px !important;
+					width: 100% !important;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/* ==================================================================
+	>1015px
+================================================================== */
+@media screen and (max-width: 1015px) {
+	/* page */
+	.page{
+
+		.post{
+			border-right: 0px !important;
+		}
+
+		.tantan-logo{
+			display: none;
+		}
+
+		.__70pc, .__30pc{
+			width: 100% !important;
+		}
+
+	}
+}

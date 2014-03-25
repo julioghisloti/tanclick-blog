@@ -1,0 +1,212 @@
+@import "_cores.scss";
+@import "_mixins.scss";
+
+/* slider */
+.slider{
+	height: 300px;
+	position: relative;
+	width: 100%;
+
+	li{
+		background-size: 100% auto;
+		height: 300px;
+		width: 100%;
+	}
+
+}
+
+/* destaques */
+.destaques{
+	display: table; 
+	//height: 600px;
+	margin-top: 15px;
+	@include center();
+
+	/* seta_destaque */
+	.arrow-destaque{
+		background-image: url(http://localhost/_tanclick/wp-content/themes/tanclick/build/img/icons-sprite.png);
+		height: 18px;
+		position: absolute;
+		top: 10%;
+		width: 9px;
+	}
+
+	.left{
+		background-position: -74px 0px;
+		right: 48.3%;
+	}
+
+	.right{
+		background-position: -84px 0px;
+		left: 48.3%;
+	}
+
+	/* destaque_bottom */
+	._destaque-bottom{
+		display: table;
+
+		.destaque-block-txt{
+			left: 0 !important;
+		}
+
+		.destaque-block-img{
+			margin-left: 50.5%;
+			position: relative;
+			//right: 0 !important;
+		}
+	}
+
+	.destaque-block{
+		margin: 0px;
+		padding: 0px;
+		width: 50%;
+
+		a, a:link, a:visited, a:active{
+			color: $amarelo2;
+			text-decoration: none;
+		}
+
+		i{
+			background: url(http://localhost/_tanclick/wp-content/themes/tanclick/build/img/icons-sprite.png);
+			display: block;
+			float: left;
+			height: 15px;
+			margin-right: 5px;
+			position: relative;
+		}
+
+		.cuidados{
+			background-position: 0px 0px;
+			width: 17px;
+		}
+
+		.novidades{
+			background-position: -17px 0px;
+			width: 17px;
+		}
+
+		.promocoes{
+			background-position: -34px 0px;
+			width: 16px;
+		}
+
+		.servicos{
+			background-position: -52px 0px;
+			width: 19px;
+		}
+
+		.destaque-block-img{
+
+			img{
+				height: auto;
+				width: 100%;
+			}
+
+		}
+
+		.destaque-block-txt{
+			background-color: $azul;
+			color: #fff;
+			height: 81.8%;
+			margin: 1.5%;
+			//margin-left: 0;
+			padding: 2.5%;
+			position: absolute;
+			right: 0;
+			width: 41.9%;
+
+			.title{
+				color: $amarelo2;
+				margin-bottom: 10px;
+			}
+
+			p{
+				margin-bottom: 15px;
+			}
+
+			h2{
+				font-weight: bold;
+				margin-bottom: 3px;
+			}
+
+		}
+
+	}
+
+}
+
+/* ==================================================================
+	>1200px
+================================================================== */
+@media screen and (max-width: 1200px) {
+	/* menu */
+	.destaque-block{
+		font-size: .9em !important;
+	}
+}
+
+/* ==================================================================
+	>1015px
+================================================================== */
+@media screen and (max-width: 1015px) {
+	/* slider */
+	.slider{
+		li{
+			height: 250px;
+		}
+	}
+
+	/* destaques */
+	.destaque-block{
+		//float: none;
+		font-size: .9em !important;
+		width: 100% !important;
+	}
+}
+
+/* ==================================================================
+	>850px
+================================================================== */
+@media screen and (max-width: 850px) {
+	/* slider */
+	.slider{
+		height: 150px;
+
+		li{
+			//background-size: auto 100%;
+			height: 150px;
+		}
+	}
+
+	/* destaques */
+	.destaque-block{
+		.destaque-block-img{
+			display: none;
+		}
+
+		.destaque-block-txt{
+			position: relative !important;
+			width: 92% !important;
+		}
+
+		.arrow-destaque{
+			display: none;
+		}
+
+	}
+
+}
+
+/* ==================================================================
+	>530px
+================================================================== */
+@media screen and (max-width: 530px) {
+	/* slider */
+	.slider{
+		li{
+			background-size: 100% 100%;
+		}
+
+	}
+
+}

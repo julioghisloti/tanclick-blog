@@ -1,0 +1,94 @@
+/* comp */
+/* line 6, ../scss/post.scss */
+body {
+  background-color: #ddd; }
+
+/* post */
+/* line 9, ../scss/post.scss */
+.page {
+  display: table;
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, ../scss/post.scss */
+  .page .post {
+    border-right: 1px solid #ccc;
+    display: table; }
+    /* line 19, ../scss/post.scss */
+    .page .post img {
+      margin-bottom: 20px;
+      width: 100%; }
+    /* line 25, ../scss/post.scss */
+    .page .post h1 {
+      font-size: 1.7em;
+      margin-bottom: 25px; }
+    /* line 30, ../scss/post.scss */
+    .page .post p {
+      margin-bottom: 15px;
+      text-align: justify; }
+
+/* sidebar */
+/* line 40, ../scss/post.scss */
+.sidebar {
+  width: 26.5%;
+  /* tantan logo */
+  /* sidebar-block */ }
+  /* line 44, ../scss/post.scss */
+  .sidebar .tantan-logo {
+    float: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 49, ../scss/post.scss */
+    .sidebar .tantan-logo img {
+      height: auto;
+      width: 100%; }
+  /* line 57, ../scss/post.scss */
+  .sidebar .sidebar-block {
+    color: #444;
+    float: none;
+    margin-bottom: 25%;
+    margin-top: 15%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 65, ../scss/post.scss */
+    .sidebar .sidebar-block a, .sidebar .sidebar-block a:link, .sidebar .sidebar-block a:active, .sidebar .sidebar-block a:visited {
+      color: #444;
+      text-decoration: none; }
+    /* line 70, ../scss/post.scss */
+    .sidebar .sidebar-block h1 {
+      font-size: 1.3em;
+      margin-bottom: 8%;
+      text-transform: uppercase; }
+    /* line 76, ../scss/post.scss */
+    .sidebar .sidebar-block li {
+      border-bottom: 1px solid #aaa;
+      list-style: none;
+      margin-bottom: 5%;
+      padding-bottom: 1%; }
+    /* line 83, ../scss/post.scss */
+    .sidebar .sidebar-block .fb-like-box {
+      width: 100%; }
+      /* line 86, ../scss/post.scss */
+      .sidebar .sidebar-block .fb-like-box span {
+        width: 100% !important; }
+        /* line 89, ../scss/post.scss */
+        .sidebar .sidebar-block .fb-like-box span iframe {
+          height: 500px !important;
+          width: 100% !important; }
+
+/* ==================================================================
+	>1015px
+================================================================== */
+@media screen and (max-width: 1015px) {
+  /* page */
+  /* line 109, ../scss/post.scss */
+  .page .post {
+    border-right: 0px !important; }
+  /* line 113, ../scss/post.scss */
+  .page .tantan-logo {
+    display: none; }
+  /* line 117, ../scss/post.scss */
+  .page .__70pc, .page .__30pc {
+    width: 100% !important; } }

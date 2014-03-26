@@ -1,9 +1,11 @@
 @import "_cores.scss";
 @import "_mixins.scss";
+@import "compass/css3";
 
 /* slider */
 .slider{
 	height: 300px;
+	overflow: hidden;
 	position: relative;
 	width: 100%;
 
@@ -11,6 +13,58 @@
 		background-size: 100% auto;
 		height: 300px;
 		width: 100%;
+	}
+
+	//Setas Slider
+	.slider-arrow{
+		display: table;
+		height: 40px;
+		margin-top: -20px;
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		z-index: 9999;
+
+		.arrow{
+			background-color: $azul;
+			display: block;
+			height: 40px;
+			position: absolute;
+			width: 40px;
+
+			@include border-radius(30px);
+		}
+
+		._left{
+			left: 5%;
+		}
+
+		._left:before{
+			border: 10px solid transparent;
+			border-right-color: #faa635;
+			content: "";
+			right: 50%;
+			margin-right: -3px;
+			margin-top: -10px;
+			position: absolute;
+			top: 50%;
+		}
+
+		._right{
+			right: 5%;
+		}
+
+		._right:before{
+			border: 10px solid transparent;
+			border-left-color: #faa635;
+			content: "";
+			left: 50%;
+			margin-left: -3px;
+			margin-top: -10px;
+			position: absolute;
+			top: 50%;
+		}
+
 	}
 
 }

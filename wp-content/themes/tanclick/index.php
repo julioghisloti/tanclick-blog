@@ -10,19 +10,16 @@
 
 			<!-- slider_view -->
 				<ul>
-					<li style="background-image: url(<?php bloginfo('stylesheet_directory') ?>/build/img/foto-slider.png);">
-						
-					</li>
-					<li></li>
-					<li></li>
+					<li style="background-image: url(<?php bloginfo('stylesheet_directory') ?>/build/img/foto-slider.png);"></li>
+					<li style="background-image: url(<?php bloginfo('stylesheet_directory') ?>/build/img/foto-slider.png);"></li>
 				</ul>
 			<!-- /slider_view -->
 
 			<!-- slider_arrow -->
 				<div class="slider-arrow">
 					
-					<div class="arrow _left"></div>
-					<div class="arrow _right"></div>
+					<div class="arrow _left" id="prev"></div>
+					<div class="arrow _right" id="next"></div>
 
 				</div>
 			<!-- /slider_arrow -->

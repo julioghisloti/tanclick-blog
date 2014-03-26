@@ -44,3 +44,6 @@
 
 	</footer>
 <!-- /footer-all -->
+
+</body>
+</html>

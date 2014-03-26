@@ -69,7 +69,7 @@
 				</nav>
 			<!-- /menu -->
 
-			<select name="" class="menu-mob __90pc" id="">
+			<select name="" class="menu-mob __90pc">
 				<option value="">Sobre</option>
 				<option value="">Dicas e Serviços</option>
 				<option value="">Notícias</option>
@@ -80,6 +80,3 @@
 
 		</div>
 	<!-- /menu_all -->
-	
-</body>
-</html>

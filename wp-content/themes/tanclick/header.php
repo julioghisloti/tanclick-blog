@@ -69,13 +69,13 @@
 				</nav>
 			<!-- /menu -->
 
-			<select name="" class="menu-mob __90pc">
-				<option value="">Sobre</option>
-				<option value="">Dicas e Serviços</option>
-				<option value="">Notícias</option>
-				<option value="">Lançamentos</option>
-				<option value="">Curiosidades</option>
-				<option value="">Contato</option>
+			<select name="" class="menu-mob __90pc" id="menu-mob">
+				<option value="<?php echo get_site_url(); ?>/sobre">Sobre</option>
+				<option value="<?php echo get_site_url(); ?>/arquivos/category/dicas-servicos">Dicas e Serviços</option>
+				<option value="<?php echo get_site_url(); ?>/arquivos/category/noticias">Notícias</option>
+				<option value="<?php echo get_site_url(); ?>/arquivos/category/lancamentos">Lançamentos</option>
+				<option value="<?php echo get_site_url(); ?>/arquivos/category/curiosidades">Curiosidades</option>
+				<option value="<?php echo get_site_url(); ?>/contato">Contato</option>
 			</select>
 
 		</div>

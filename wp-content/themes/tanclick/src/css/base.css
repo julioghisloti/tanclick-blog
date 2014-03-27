@@ -230,8 +230,11 @@ a:hover {
     padding: 15px 0 15px 0;
     text-align: center;
     width: 100%; }
+    /* line 136, ../scss/base.scss */
+    .footer-all .footer-tel span {
+      padding: 3% 3% 0 3%; }
 
-/* line 139, ../scss/base.scss */
+/* line 144, ../scss/base.scss */
 .menu-mob {
   display: none; }
 
@@ -240,7 +243,7 @@ a:hover {
 ================================================================== */
 @media screen and (max-width: 1200px) {
   /* menu */
-  /* line 146, ../scss/base.scss */
+  /* line 151, ../scss/base.scss */
   .menu {
     font-size: 1.1em !important; } }
 /* ==================================================================
@@ -248,7 +251,7 @@ a:hover {
 ================================================================== */
 @media screen and (max-width: 1015px) {
   /* menu */
-  /* line 156, ../scss/base.scss */
+  /* line 161, ../scss/base.scss */
   .menu {
     font-size: .9em !important; } }
 /* ==================================================================
@@ -256,27 +259,27 @@ a:hover {
 ================================================================== */
 @media screen and (max-width: 850px) {
   /* top */
-  /* line 166, ../scss/base.scss */
+  /* line 171, ../scss/base.scss */
   .top-all {
     height: 225px; }
-    /* line 169, ../scss/base.scss */
+    /* line 174, ../scss/base.scss */
     .top-all .__50pc {
       float: none;
       text-align: center;
       width: 100%; }
-    /* line 175, ../scss/base.scss */
+    /* line 180, ../scss/base.scss */
     .top-all .search-all {
       text-align: center !important; }
-      /* line 178, ../scss/base.scss */
+      /* line 183, ../scss/base.scss */
       .top-all .search-all .search {
         width: 95% !important; }
 
   /* menu */
-  /* line 187, ../scss/base.scss */
+  /* line 192, ../scss/base.scss */
   .menu {
     display: none; }
 
-  /* line 191, ../scss/base.scss */
+  /* line 196, ../scss/base.scss */
   .menu-mob {
     display: block;
     margin-left: auto;

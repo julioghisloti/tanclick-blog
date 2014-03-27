@@ -25,7 +25,7 @@
 			<!-- /slider_arrow -->
 
 			<!-- slider_pager -->
-				<div class="slider-pager">
+				<div class="slider-pager"></div>
 			<!-- /slider_pager -->
 			
 		</section>
@@ -41,9 +41,11 @@
 					<?php if ($myquery->have_posts()) : while ($myquery->have_posts()) : $myquery->the_post(); ?>
 
 						<!-- destaque_img -->
-							<div class="destaque-block-img _col __50pc">
-								<img src="<?php bloginfo('stylesheet_directory') ?>/build/img/img-destaque.png" />
-							</div>
+							<?php if ( has_post_thumbnail() ) { ?>
+								<div class="destaque-block-img _col __50pc">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							<?php } ?>
 						<!-- /destaque_img -->
 
 						<!-- seta_destaque -->
@@ -77,9 +79,11 @@
 					<?php if ($myquery->have_posts()) : while ($myquery->have_posts()) : $myquery->the_post(); ?>
 
 						<!-- destaque_img -->
-							<div class="destaque-block-img _col __50pc">
-								<img src="<?php bloginfo('stylesheet_directory') ?>/build/img/img-destaque.png" />
-							</div>
+							<?php if ( has_post_thumbnail() ) { ?>
+								<div class="destaque-block-img _col __50pc">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							<?php } ?>
 						<!-- /destaque_img -->
 
 						<!-- seta_destaque -->
@@ -132,9 +136,11 @@
 						<!-- /seta_destaque -->
 
 						<!-- destaque_img -->
-							<div class="destaque-block-img _col __50pc">
-								<img src="<?php bloginfo('stylesheet_directory') ?>/build/img/img-destaque.png" />
-							</div>
+							<?php if ( has_post_thumbnail() ) { ?>
+								<div class="destaque-block-img _col __50pc">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							<?php } ?>
 						<!-- /destaque_img -->
 
 					<?php endwhile; endif; wp_reset_query(); ?>
@@ -169,9 +175,11 @@
 
 
 						<!-- destaque_img -->
-							<div class="destaque-block-img _col __50pc">
-								<img src="<?php bloginfo('stylesheet_directory') ?>/build/img/img-destaque.png" />
-							</div>
+							<?php if ( has_post_thumbnail() ) { ?>
+								<div class="destaque-block-img _col __50pc">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							<?php } ?>
 						<!-- /destaque_img -->
 
 					<?php endwhile; endif; wp_reset_query(); ?>

@@ -14,9 +14,9 @@
 
 				<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' ); ?>
 
-				<?php if ( has_post_thumbnail() ) { ?>
-					<img src="<?php echo $src[0]; ?>" alt="" />
-				<?php } ?>
+				<?php //if ( has_post_thumbnail() ) { ?>
+					<!--<img src="<?php //echo $src[0]; ?>" alt="" />-->
+				<?php //} ?>
 
 				<!-- titulo -->
 				<h1 style="color:<?php echo $cat_color; ?>;"><?php the_title(); ?></h1>
